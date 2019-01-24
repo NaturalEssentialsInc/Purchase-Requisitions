@@ -1,0 +1,80 @@
+body {
+	background-color: grey;
+	background-image: url('../assets/images/clean-gray-paper.png');
+}
+
+a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
+	color: black;
+}
+
+a.report:link, a.report:visited, a.report:hover, a.report:active {
+	color: #6c757d;
+	text-decoration: none;
+}
+
+label {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.head {
+  background-image: url('../assets/images/clean-gray-paper.png');
+}
+
+.footer {
+  background-image: url('../assets/images/clean-gray-paper.png');	
+  height: 100px;
+}
+
+.masthead {
+	text-align: center;
+	padding: 40px 0px 20px 0px;
+}
+
+form {
+	padding: 50px 10px;
+}
+
+.search {
+	margin-left: 10px;
+}
+
+.form-content {
+	background-color: white;
+	border-left: 1px solid #dee2e6;
+	border-right: 1px solid #dee2e6;
+	border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+  margin-bottom: 50px;
+}
+
+.table-label {
+	padding-bottom: 25px;
+}
+
+#content {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	background-color: #f4fcff;
+	border: 1px solid skyblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+#description {
+	text-align: center;
+	font-size: 1.25em;
+	font-style: italic;
+	padding-top: 75px;
+}
+
+#display {
+	border: 1px solid black;
+	padding: 75px;
+	margin-top: 50px;
+	width: 75%;
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+#submit {
+	margin-top: 75px;
+}

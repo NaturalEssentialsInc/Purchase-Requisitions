@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purchase Requisitions</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIz/AP///wCjo6MAO7f/AEKPTABXlF8AgoKCAHqefwAAJv8Ac0o7AJGrlQCRkZEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHd3d3d3d5R3wiLCIiLJFEwzMzMzMzOUM4iIiIiIiIiIZmZmZmZmZmZSIlIiUiJSJWZmZmZmZmZmiIiIiIiIiIi7qqu7u7u7uzOjozMzMzMzysrKzMzMzMx3d3d3d3d3dwAAAAAAAAAAAAAAAAAAAAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light head">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/bulk.png">
+				</a>
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/naturalEssentials.png">
+				</a>
+			</div>	
+		</nav>
+		<div class="container" id="content">
+			<div class="container masthead">
+				<h1>Purchase Requisition Form</h1>
+			</div>
+			<div class="container form-content">
+				<p id="description" class="text-center">This form is for the requisition of components and material necessary for Natural Essentials Production.</p>
+				<form name="submit-to-google-sheet">
+					<div class="form-group">
+						<label for="itemDescription">Item Description</label>
+						<textarea class="form-control form-control-lg" placeholder="Description of requested item..." id="itemDescription" rows="3" name="itemDescription"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="partNumber">Part Number</label>
+						<input type="text" class="form-control form-control-lg" id="partNumber" placeholder="Enter a part number..." name="partNumber">	
+					</div>
+					<div class="form-group">
+						<label for="quantity">Quantity Required</label>
+						<input type="number" class="form-control form-control-lg" id="quantity" placeholder="Enter the quantity required..." name="quantity">
+					</div>
+					<div class="form-group">
+						<label for="needBy">Need By Date</label>
+						<input type="date" class="form-control form-control-lg" id="needBy" name="needBy">
+					</div>
+					<div class="form-group">
+						<label for="allocatedTo">Allocated To</label>
+						<input type="text" class="form-control form-control-lg" id="allocatedTo" placeholder="To whom is this being allocated..." name="allocatedTo">	
+					</div>
+					<div class="form-group">
+						<label for="requestedBy">Requested By</label>
+						<input type="text" class="form-control form-control-lg" id="requestedBy" placeholder="Enter name..." name="requestedBy">	
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-lg btn-block" id="submit">	
+					</div>
+				</form>
+			</div>	
+		</div>
+		<footer class="footer mt-auto py-3 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="text-muted">&copy; 2019 Bulk Apothecary/Natural Essentials</span>
+					</div>
+					<div class="col-sm-6">
+						<span class="text-muted"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=goodnight.ian@gmail.com" target="_blank" class="report">Report Issues</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./assets/app.js"></script>
+</body>
+</html>
