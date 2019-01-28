@@ -12,9 +12,23 @@ a.report:link, a.report:visited, a.report:hover, a.report:active {
 	text-decoration: none;
 }
 
+footer {
+	border-top: 1px solid gray;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+form {
+	padding: 50px 10px;
+}
+
 label {
 	font-size: 1.1em;
 	font-weight: bold;
+}
+
+nav {
+	border-bottom: 1px solid gray;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .head {
@@ -29,10 +43,6 @@ label {
 .masthead {
 	text-align: center;
 	padding: 40px 0px 20px 0px;
-}
-
-form {
-	padding: 50px 10px;
 }
 
 .search {
