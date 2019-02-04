@@ -13,7 +13,7 @@
 				<a class="navbar-brand" href="#">
 					<img src="./assets/images/bulk.png">
 				</a>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="#" style="margin-right:0px;">
 					<img src="./assets/images/naturalEssentials.png">
 				</a>
 			</div>	
@@ -24,30 +24,34 @@
 			</div>
 			<div class="container form-content">
 				<p id="description" class="text-center">This form is for the requisition of components and materials necessary for Natural Essentials Production.</p>
-				<form name="submit-to-google-sheet">
+				<form name="submit-to-google-sheet" class="needs-validation">
 					<div class="form-group">
 						<label for="itemDescription">Item Description</label>
-						<textarea class="form-control form-control-lg" placeholder="Description of requested item..." id="itemDescription" rows="3" name="itemDescription"></textarea>
+						<textarea class="form-control form-control-lg" placeholder="Description of requested item..." id="itemDescription" rows="3" name="itemDescription" required></textarea>
 					</div>
 					<div class="form-group">
 						<label for="partNumber">Part Number</label>
-						<input type="text" class="form-control form-control-lg" id="partNumber" placeholder="Enter a part number..." name="partNumber">	
+						<input type="text" class="form-control form-control-lg" id="partNumber" placeholder="Enter a part number..." name="partNumber" required>
 					</div>
 					<div class="form-group">
 						<label for="quantity">Quantity Required</label>
-						<input type="number" class="form-control form-control-lg" id="quantity" placeholder="Enter the quantity required..." name="quantity">
+						<input type="number" class="form-control form-control-lg" id="quantity" placeholder="Enter the quantity required..." name="quantity" required>
 					</div>
 					<div class="form-group">
 						<label for="needBy">Need By Date</label>
-						<input type="date" class="form-control form-control-lg" id="needBy" name="needBy">
+						<input type="date" class="form-control form-control-lg" id="needBy" name="needBy" required>
 					</div>
 					<div class="form-group">
 						<label for="allocatedTo">Allocated To</label>
-						<input type="text" class="form-control form-control-lg" id="allocatedTo" placeholder="To whom is this being allocated..." name="allocatedTo">	
+						<input type="text" class="form-control form-control-lg" id="allocatedTo" placeholder="To whom is this being allocated..." name="allocatedTo" required>	
 					</div>
 					<div class="form-group">
 						<label for="requestedBy">Requested By</label>
-						<input type="text" class="form-control form-control-lg" id="requestedBy" placeholder="Enter name..." name="requestedBy">	
+						<input type="text" class="form-control form-control-lg" id="requestedBy" placeholder="Enter name..." name="requestedBy" required>	
+					</div>
+					<div class="form-group">
+						<label for="email">Email Receipt</label>
+						<input type="email" class="form-control form-control-lg" id="email" placeholder="If you would like an emailed receipt, please enter your email address..." name="email">	
 					</div>
 					<div class="form-group">
 						<input type="submit" class="btn btn-primary btn-lg btn-block" id="submit">	
@@ -62,7 +66,7 @@
 						<span class="text-muted">&copy; 2019 Bulk Apothecary/Natural Essentials</span>
 					</div>
 					<div class="col-sm-6">
-						<span class="text-muted"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=goodnight.ian@gmail.com" target="_blank" class="report">Report Issues</a></span>
+						<span class="text-muted"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=ian.goodnight@bulkapothecary.com" target="_blank" class="report">Report Issues</a></span>
 					</div>
 				</div>
 			</div>

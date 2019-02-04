@@ -5,8 +5,9 @@ $(document).ready(function() {
     
   form.addEventListener('submit', e => {
     e.preventDefault();
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response), alert('Your purchase request has been successfully submitted!'))
+      .then(response => console.log('Success!', response), alert('Your purchase request has been successfully submitted!  If you requested an emailed receipt, please allow up to ten minutes for it to arrive in your inbox.'))
       .catch(error => alert('Error! Please re-submit your request!', error.message));
 
     $("#itemDescription").val("");
@@ -15,6 +16,7 @@ $(document).ready(function() {
     $("#needBy").val("");
     $("#allocatedTo").val("");
     $("#requestedBy").val("");
+    $("#email").val("");
   })  
 
 });
